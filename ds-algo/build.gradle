@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'com.daily.problem'
+group 'tutorials.coding.problems'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
@@ -11,6 +11,17 @@ repositories {
     mavenCentral()
 }
 
+//dependencies {
+//    testCompile group: 'junit', name: 'junit', version: "${junitVersion}"
+//    testCompile group: 'org.mockito', name: 'mockito-core', version: "${mockitoVersion}"
+//    testCompile group: 'org.hamcrest', name: 'hamcrest-library', version: "${hamcrestVersion}"
+//}
+
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testImplementation "org.junit.jupiter:junit-jupiter-api:${junit5Version}"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junit5Version}"
+}
+
+test {
+    useJUnitPlatform()
 }
