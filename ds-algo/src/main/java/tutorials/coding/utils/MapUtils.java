@@ -2,6 +2,7 @@ package tutorials.coding.utils;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public final class MapUtils {
@@ -25,6 +26,12 @@ public final class MapUtils {
 
     public static <K, V> Map<K, V> ofEntries(Map.Entry<K, V>... entries) {
         return toMap(entries);
+    }
+
+    public static <K, V> Map<K, V> ofEntries(List<Map.Entry<K, V>> entries) {
+        Map<K, V> map = new HashMap<>();
+        entries.forEach(e -> map.put(e.getKey(), e.getValue()));
+        return map;
     }
 
     private static <K, V> Map<K, V> toMap(Map.Entry<K, V>... entries) {
