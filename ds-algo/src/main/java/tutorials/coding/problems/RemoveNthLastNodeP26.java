@@ -6,25 +6,33 @@ public class RemoveNthLastNodeP26 {
 
     public ListNode removeNthFromEnd(ListNode head, int n) {
         int size = 0;
-        int t = 0;
         ListNode start = head;
-        ListNode found = null;
-        int diff = n - 1;
+        ListNode delete = null;
+        ListNode prev = null;
         while (start != null) {
             size++;
-            t = size - diff;
+            int t = size - (n - 1);
             if (t > 0) {
-                if (found == null) {
-                    found = head;
+                if (delete == null) {
+                    delete = head;
                 } else {
-                    found = found.getNext();
+                    prev = delete;
+                    delete = delete.getNext();
                 }
             }
             start = start.getNext();
         }
-        if (found != null && found.getNext() != null) {
-            found.setVal(found.getNext().getVal());
-            found.setNext(found.getNext().getNext());
+        if (delete == null) {
+            return null;
+        } else if (delete.getNext() == null) { // last node
+            if (prev == null) { // 1 node only
+                return null;
+            } else {
+                prev.setNext(null);
+            }
+        } else {
+            delete.setVal(delete.getNext().getVal());
+            delete.setNext(delete.getNext().getNext());
         }
         return head;
     }
