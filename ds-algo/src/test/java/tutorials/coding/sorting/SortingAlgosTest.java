@@ -1,7 +1,6 @@
 package tutorials.coding.sorting;
 
 import org.junit.jupiter.api.DynamicTest;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestFactory;
 
 import java.util.Arrays;
@@ -11,8 +10,8 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-import static tutorials.coding.utils.MapUtils.*;
-import static tutorials.coding.utils.ArrayUtils.*;
+import static tutorials.utils.MapUtils.*;
+import static tutorials.utils.ArrayUtils.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class SortingAlgosTest {

@@ -2,16 +2,13 @@ package tutorials.coding.problems;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DynamicTest;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestFactory;
-import tutorials.coding.utils.ArrayUtils;
-import tutorials.coding.utils.MapUtils;
+import tutorials.utils.ArrayUtils;
+import tutorials.utils.MapUtils;
 
 import java.util.Arrays;
 import java.util.Map;
 import java.util.stream.Stream;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 public class Problem4Test {
 

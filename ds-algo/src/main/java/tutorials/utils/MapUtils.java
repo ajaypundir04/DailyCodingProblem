@@ -1,4 +1,4 @@
-package tutorials.coding.utils;
+package tutorials.utils;
 
 import java.util.Arrays;
 import java.util.HashMap;

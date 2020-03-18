@@ -1,4 +1,4 @@
-package tutorials.coding.utils;
+package tutorials.utils;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -23,5 +23,17 @@ public final class ArrayUtils {
         int[] dup = Arrays.copyOf(array, array.length);
         Arrays.sort(dup);
         return dup;
+    }
+
+    public static void swap( int[] ar, int i, int j ) {
+        if ( isIndexInRange( ar, i ) && isIndexInRange( ar, j ) ) {
+            int tmp = ar[ i ];
+            ar[ i ] = ar[ j ];
+            ar[ j ] = tmp;
+        }
+    }
+
+    private static boolean isIndexInRange( int[] ar, int index ) {
+        return ( index >= 0 && index < ar.length );
     }
 }

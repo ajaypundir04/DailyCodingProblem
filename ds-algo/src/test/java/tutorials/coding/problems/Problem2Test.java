@@ -9,9 +9,9 @@ import java.util.Map;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-import static tutorials.coding.utils.ArrayUtils.array;
-import static tutorials.coding.utils.MapUtils.entry;
-import static tutorials.coding.utils.MapUtils.ofEntries;
+import static tutorials.utils.ArrayUtils.array;
+import static tutorials.utils.MapUtils.entry;
+import static tutorials.utils.MapUtils.ofEntries;
 
 public class Problem2Test {
 

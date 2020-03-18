@@ -9,7 +9,7 @@ import org.junit.jupiter.api.TestFactory;
 import java.util.Arrays;
 import java.util.stream.Stream;
 
-import static tutorials.coding.utils.ArrayUtils.array;
+import static tutorials.utils.ArrayUtils.array;
 
 public class Problem1Test {
 

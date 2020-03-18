@@ -7,8 +7,8 @@ import java.util.Map;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static tutorials.coding.utils.MapUtils.entry;
-import static tutorials.coding.utils.MapUtils.ofEntries;
+import static tutorials.utils.MapUtils.entry;
+import static tutorials.utils.MapUtils.ofEntries;
 
 public class BalanceBracketP27Test {
 
